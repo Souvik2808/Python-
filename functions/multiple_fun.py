@@ -33,17 +33,17 @@ def prime_check(num):
 # Armstrong Number Check : 
 
 def armstrong(num):
-    sum = 0
-    temp = num
-    while(temp > 0):
-        reminder = temp % 10
-        sum = sum + (reminder+reminder+reminder)
-        temp = temp // 10
+    s = 0
+    n = num
+    while(num > 0):
+        r = num % 10
+        s = s + (r**3)
+        num = num // 10
  
-    if(sum == num ):
-        print(f"{num} is Armstrong ")
+    if(n == s ):
+        print(f"{n} is Armstrong ")
     else:
-        print(f"{num} is not Armstrong")
+        print(f"{n} is not Armstrong")
 
 
 # Neon Number Check...
@@ -68,16 +68,16 @@ def neon_number(num):
 
 def palindrome(num):
     reverse = 0
-    temp = num
-    while(temp > 0):
+    n = num
+    while(num > 0):
         reminder = num % 10
         reverse = reverse * 10 + reminder
-        temp = temp // 10
+        num = num // 10
 
-    if(reverse == num):
-        print(f"{num} is Palindrome ")
+    if(reverse == n):
+        print(f"{n} is Palindrome ")
     else:
-        print(f"{num} is not Palindrome")
+        print(f"{n} is not Palindrome")
 
 
 # krishnamurty Number Check :
@@ -85,19 +85,19 @@ def palindrome(num):
 def krishnamurty(num):
     f = 1
     s = 0
-    temp = num 
-    while(temp > 0):
+    n = num 
+    while(num > 0):
         reminder = num % 10
         for i in range(reminder):
             f = f*i
         s = s+f
-        temp = temp // 10
-        s = 0
+        num = num // 10
+    
 
-    if(num == s):
-        print(f"{num} is krishnamurty")
+    if(n == s):
+        print(f"{n} is krishnamurty")
     else:
-        print(f"{num} is not krishnamurty")
+        print(f"{n} is not krishnamurty")
 
 
 # Perfect Number Check...
