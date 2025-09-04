@@ -11,4 +11,4 @@ for i in arr:
     if(i == search):
         print(f"Element to be found")
         exit()
-print(f"Element not found..")
+print(f"Element not found...")

@@ -13,7 +13,7 @@ for i in range(num):
     for j in range(i+1, num):
         
         if(arr[i] == arr[j]):
-            print(f"duplicate value found in array .")
+            print(f"duplicate value found in array ")
             exit()
 
-print(f"No duplicate value found in array .")
+print(f"No duplicate value found in array ")

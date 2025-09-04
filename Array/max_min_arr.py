@@ -15,5 +15,5 @@ for i in arr:
     if(i < min):
         min = i
 
-print(f"Your max element in array : {max}")
-print(f"Your min element in array : {min}")
+print(f"Your max element in array :  {max}")
+print(f"Your min element in array :  {min}")

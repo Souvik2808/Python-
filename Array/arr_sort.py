@@ -22,4 +22,4 @@ for i in range(num):
             arr[i] = arr[j]
             arr[j]= t
 
-print("After Manual Sorting Result of this array is : ", arr)
+print("After Manual Sorting Result of this array is : ",  arr)
