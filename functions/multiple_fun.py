@@ -29,7 +29,6 @@ def prime_check(num):
     else:
         print(f"{num} is not Prime number")
 
-
 # Armstrong Number Check : 
 
 def armstrong(num):
@@ -63,7 +62,6 @@ def neon_number(num):
         print(f"{num} is not a neon number")
 
 
-
 # Palindrome Number Check :
 
 def palindrome(num):
@@ -83,17 +81,16 @@ def palindrome(num):
 # krishnamurty Number Check :
 
 def krishnamurty(num):
-    f = 1
     s = 0
     n = num 
     while(num > 0):
+        f = 1
         reminder = num % 10
-        for i in range(reminder):
+        for i in range(1, reminder + 1):
             f = f*i
-        s = s+f
+        s += f
         num = num // 10
     
-
     if(n == s):
         print(f"{n} is krishnamurty")
     else:
@@ -120,7 +117,6 @@ def automorphic_number(num):
         print(f"{num} is an automorphic number")
     else:
         print(f"{num} is not an automorphic number")
-
 
 # Harshed Number Check ...
 
@@ -177,8 +173,6 @@ def spy_number(num):
         print(f"{num} is not a spy number")
 
 
-
-
 is_loop = True
 while(is_loop):
     print("1. Check number is even or odd")    
@@ -219,7 +213,7 @@ while(is_loop):
     elif (ch == 8):
         automorphic_number(num)
     elif (ch == 9):
-        haesed_number(num)
+        harshed_number(num)
     elif (ch == 10):
         strong_number(num)
     elif (ch == 11):
@@ -234,6 +228,4 @@ while(is_loop):
         pass
     else:
         is_loop = False
-
-    
 
